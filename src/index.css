@@ -1,0 +1,276 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #e67171;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: auto;
+  min-height: 200px;
+}
+
+.section{
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 2rem; /* Padding around the section */
+  background-color: #d5a5a5; /* Light background color */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Hover effect for boxes */
+.section-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #131212;
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed; /* Keeps the sidebar fixed on the screen */
+  top: 100px; /* Aligns the sidebar to the top of the viewport */
+  left: 0; /* Aligns the sidebar to the left of the viewport */
+  height: 100vh; /* Makes the sidebar span the entire height of the viewport */
+  width: 200px; /* Fixed width for the sidebar */
+  overflow-y: auto; /* Enables scrolling if the content exceeds the viewport height */
+  background-color: #dd7cae; /* Background color for the sidebar */
+  padding: 1rem; /* Padding inside the sidebar */
+  box-shadow: 2px 0 5px rgba(251, 248, 248, 0.1); /* Subtle shadow for better UI */
+}
+
+.sidebar ul {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes padding from the list */
+  margin: 0; /* Removes margin from the list */
+}
+
+.sidebar li {
+  margin-bottom: 1rem; /* Adds spacing between list items */
+}
+
+.sidebar a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Text color for links */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.sidebar a:hover {
+  color: #090909; /* Changes text color on hover */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  background-color: #a82367;
+  color: rgb(223, 198, 213);
+  
+}
+
+.header-buttons button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 1rem;
+  flex: 1;
+  background-color: #f9f9f9;
+}
+
+.dashboard-sections {
+  display:grid;
+  grid-template-columns: repeat( align-items, minmax(1000px, 1fr));
+  gap: 2rem;
+}
+
+.section-box {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #0c0c0c;
+  border-radius:20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+.footer {
+  position:relative;
+  bottom: 0;
+  width: calc(100% - 200px);
+  height: 60px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fafefa;
+  color: rgb(14, 13, 13);
+}
+/* FAQ section container */
+.faq-section {
+  padding: 1.5rem; /* Padding around the FAQ section */
+}
+
+/* Container for FAQ items */
+.faq-container {
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack FAQ items vertically */
+  gap: 1rem; /* Space between FAQ items */
+}
+
+/* Individual FAQ item */
+.faq-item {
+  background-color: #d5a5a5; /* White background for the FAQ item */
+  padding: 1rem; /* Padding inside the FAQ item */
+  border: 1px solid #0f0c0c; /* Light border for the FAQ item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for FAQ items */
+.faq-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* FAQ item title */
+.faq-item h3 {
+  font-size: 1.25rem; /* Heading size */
+  margin-bottom: 0.5rem; /* Space below heading */
+  color: #333; /* Dark text color */
+}
+
+/* FAQ item description */
+.faq-item p {
+  font-size: 1rem; /* Paragraph text size */
+  color: #666; /* Gray text color */
+  line-height: 1.5; /* Better readability */
+}
+
+
+.experts{
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 2rem; /* Padding around the section */
+  background-color: #d5a5a5; /* Light background color */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+}
+/* Container for insights cards */
+.insights-container {
+  display: flex; /* Use Flexbox for layout */
+  flex-wrap: wrap; /* Wrap cards to the next row if they exceed the width */
+  gap: 1.5rem; /* Space between cards */
+  margin-top: 1rem; /* Space between heading and cards */
+}
+
+/* Individual insight card */
+.insight-card {
+  background-color: #fff; /* White background for the card */
+  padding: 1rem; /* Padding inside the card */
+  border: 1px solid #ddd; /* Light border for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+  width: 300px; /* Fixed width for each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for cards */
+.insight-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Card title */
+.insight-card h3 {
+  font-size: 1.25rem; /* Heading size */
+  margin-bottom: 0.5rem; /* Space below heading */
+  color: #333; /* Dark text color */
+}
+
+/* Card description */
+.insight-card p {
+  font-size: 1rem; /* Paragraph text size */
+  color: #666; /* Gray text color */
+  line-height: 1.5; /* Better readability */
+}

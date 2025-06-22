@@ -6,7 +6,7 @@ const Sidebar: React.FC = () => {
       <nav>
         <ul>
           <li><a href="#health-management">Health Management</a></li>
-          <li><a href="#benefits">Benefits of Using She Sync</a></li>
+          <li><a href="#benefits">Benefits of Using SheSpeaks</a></li>
           <li><a href="#mission">Our Mission</a></li>
           <li><a href="#success-stories">Success Stories</a></li>
           <li><a href="#experts-insights">Experts Insights</a></li>

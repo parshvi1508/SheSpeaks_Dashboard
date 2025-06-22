@@ -35,6 +35,11 @@ const FAQ: React.FC = () => {
           </div>
         ))}
       </div>
+      <div className="insights-cta">
+        <h3>Become an Expert Contributor</h3>
+        <p>Share your expertise and help other women succeed in tech</p>
+        <button className="btn-primary">Join Our Expert Network</button>
+      </div>
     </section>
   );
 };

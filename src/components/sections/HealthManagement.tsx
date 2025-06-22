@@ -372,7 +372,7 @@ const HealthManagement: React.FC = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .health-header {
           text-align: center;
           margin-bottom: var(--space-12);
